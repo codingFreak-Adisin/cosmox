@@ -1,0 +1,169 @@
+
+/* Responsive Styles */
+
+/* Medium Devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  /* Typography */
+  h1, .hero-title {
+    font-size: 2.75rem;
+  }
+  
+  h2, .section-title {
+    font-size: 1.75rem;
+  }
+
+  /* Grid Layouts */
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-6);
+  }
+  
+  .footer-info {
+    grid-column: span 2;
+    max-width: 100%;
+  }
+
+  /* Elements */
+  .floating-planet {
+    display: none;
+  }
+}
+
+/* Small Devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* Typography */
+  h1, .hero-title, .page-title {
+    font-size: 2.25rem;
+  }
+  
+  h2, .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .hero-description, .page-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Layout & Spacing */
+  .section {
+    padding: var(--spacing-12) 0;
+  }
+  
+  .section-header {
+    margin-bottom: var(--spacing-8);
+  }
+  
+  .vision-mission-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-card {
+    padding: var(--spacing-6);
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Navigation */
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: var(--card);
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--spacing-4);
+    box-shadow: var(--shadow-md);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  .nav-menu li {
+    margin: var(--spacing-3) 0;
+    width: 100%;
+  }
+  
+  .social-items {
+    width: 100%;
+    justify-content: flex-start;
+    margin: var(--spacing-3) 0;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Buttons */
+  .hero-buttons, .cta-buttons, .join-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn {
+    width: 100%;
+    margin-bottom: var(--spacing-2);
+  }
+}
+
+/* Extra Small Devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Typography */
+  h1, .hero-title, .page-title {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+
+  /* Layout & Spacing */
+  .hero-content, .page-header-content {
+    padding: 0 var(--spacing-2);
+  }
+  
+  .testimonials-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-info {
+    grid-column: span 1;
+  }
+
+  /* Elements */
+  .back-to-top-btn {
+    right: 15px;
+    bottom: 15px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Custom breakpoint for certain elements */
+@media (max-width: 380px) {
+  .logo {
+    font-size: 1.25rem;
+  }
+  
+  .container {
+    padding: 0 var(--spacing-3);
+  }
+}
